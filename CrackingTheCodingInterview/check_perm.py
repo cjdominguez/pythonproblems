@@ -13,11 +13,11 @@ def check_perm(string1, string2):
 def checkZ_perm(string1, string2):
     for x in string1:
         for y in string2:
-            if x == y:
-                continue
-            else:
-                return False
-
+            if x != y:
+                break
+            return False
+        else:
+            continue
 
 
 
