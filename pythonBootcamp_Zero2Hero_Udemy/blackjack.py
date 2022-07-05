@@ -16,10 +16,9 @@ blackjack(9,9,11) --> 19
 
 
 def blackjack(a, b, c):
-
     if sum((a, b, c)) <= 21:  # tuple ie iterable otherwise only taskes two values
         return sum((a, b, c))
-    elif sum((a,b,c)) <= 31 and 11 in (a, b, c):
+    elif sum((a, b, c)) <= 31 and 11 in (a, b, c):
         return sum((a, b, c)) - 10
     else:
         return "Bust"
