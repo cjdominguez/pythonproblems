@@ -8,7 +8,25 @@ summer_69([4, 5, 6, 7, 8, 9]) --> 9
 summer_69([2, 1, 6, 9, 11]) --> 14
 
 
+create flags
 
 """
 
 
+def summer(nums):
+    sum_nums = 0
+    six_or_nineFLAG = False
+
+    while six_or_nineFLAG is False:
+        for x in nums:
+            if x == 6:
+                six_or_nineFLAG = True
+                break
+            elif x == 9:
+                six_or_nineFLAG = False
+            else:
+                sum_nums += x
+    return sum_nums
+
+
+print(summer([1, 1, 1, 1, 6, 5, 4, 3, 7, 9, 0]))
