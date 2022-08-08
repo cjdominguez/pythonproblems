@@ -9,6 +9,7 @@ SPY GAME: Write a function that takes in a list of integers and returns True if 
 """
 
 def spy_game(nums):
+
     pass
 
 print(spy_game([1,7,]))
