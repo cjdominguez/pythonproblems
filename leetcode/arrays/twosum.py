@@ -14,7 +14,7 @@ Input: nums = [2,7,11,15], target = 9
 Output: [0,1]
 Output: Because nums[0] + nums[1] == 9, we return [0, 1].
 """
-
+"""
 def twoSum(nums):
     target = 100
     for (index, x) in enumerate (nums):
@@ -27,3 +27,18 @@ def twoSum(nums):
 
 nums = [0,1,99,15]
 print(twoSum(nums))
+"""
+
+
+def twosum(nums, target):
+    lookup = {}
+
+    for i in range(len(nums)):
+
+        if nums[i] in lookup:
+            return [lookup[nums[i]],i]
+        else:
+            lookup[target-nums[i]] = i
+
+
+print(twosum(nums = [2,7,11,15], target = 9))
