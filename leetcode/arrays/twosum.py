@@ -38,7 +38,7 @@ def twosum(nums, target):
         if nums[i] in lookup:
             return [lookup[nums[i]],i]
         else:
-            lookup[target-nums[i]] = i
+            lookup[target-nums[i]] = i # lookup[target-nums[i]] (the target needed) = i  i is the current index in nums -> this saves in the dictionary as 7:0 on first iteration if the target is nine
 
 
 print(twosum(nums = [2,7,11,15], target = 9))
