@@ -8,10 +8,18 @@
 """
 
 import os
+
 from twilio.rest import Client
 from dotenv import load_dotenv
 load_dotenv()
 
+
+
+"""
+
+eventually just the twilio interface
+
+"""
 account_sid = os.environ['TWILIO_ACCOUNT_SID'] # os.environ or os.getenv
 auth_token = os.environ['TWILIO_AUTH_TOKEN']
 client = Client(account_sid, auth_token)
